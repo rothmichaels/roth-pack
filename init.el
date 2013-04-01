@@ -30,7 +30,7 @@
  (color-theme-cyberpunk)
  (set-face-background 'hl-line "grey13"))
 
-(live-set-default-darwin-font "Courier 14")
+;;(live-set-default-darwin-font "Courier 14")
 
 ;(set-background-color "#f2eded")
 ;(set-cursor-color 'DarkSeagreen)
