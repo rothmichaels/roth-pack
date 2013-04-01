@@ -10,8 +10,6 @@
 
 (setq roth-live-untabify-modes '(java-mode))
 
-(server-start)
-
 ;;; tramp
 (require 'tramp)
 
@@ -37,10 +35,7 @@
 (blink-cursor-mode -1)
 (tool-bar-mode -1)
 
-(set-frame-position (selected-frame) 0 0)
-(set-frame-height (selected-frame) 66)
-(set-frame-width (selected-frame) 208)
-(split-window-right)
+
 
 ;; TeX
 ;(load "auctex.el" nil t t)
