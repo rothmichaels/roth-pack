@@ -1,6 +1,6 @@
-;; fix the shell
-(window-number-mode -1)
-(window-number-meta-mode 1)
+;; fix the shell (this doesn't seem to be needed anymore, keeping as a reminder)
+;(window-number-mode -1)
+;(window-number-meta-mode 1)
 
 (setq term-mode-hook nil)
 
@@ -10,11 +10,4 @@
 
 (add-hook 'term-mode-hook 'roth-term-mode-hook)
 
-;(define-key term-raw-map "\C-y" 'term-send-raw)
-
-
-;;; key bindings
-
-;(global-set-key [?\C-c ?\C-r] 'eval-region)
-                                        ; this should maybe not be global
-
+(define-key term-raw-map (kbd "s-v") 'term-paste)
