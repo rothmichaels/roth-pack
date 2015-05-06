@@ -1,8 +1,6 @@
 ;;; global adjustments
-;(live-add-pack-lib "my-setup")
 
-
-
+(live-load-config-file "fixes.el")
 (live-load-config-file "global-modes.el")
 (live-load-config-file "terminal.el")
 

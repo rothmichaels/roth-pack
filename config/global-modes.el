@@ -1,5 +1,4 @@
-;(live-add-pack-lib "my-setup")
-                                        ;(require 'my-setup)
+;; my custom global mode settings
 
 ;; global-hl-line-mode
 (defvar roth-live-hl-mode-excludes '()
@@ -93,3 +92,4 @@
 ;;(add-to-list 'auto-mode-alist '("\\.\\(php\\|inc\\)$" . php-mode))
 ;;(add-to-list 'auto-mode-alist '("\\.info" . conf-windows-mode))
 ;;(add-hook 'drupal-mode-hook 'mh-linum-mode-on)
+ 
