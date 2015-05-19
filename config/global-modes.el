@@ -12,7 +12,7 @@
 
 (global-hl-line-mode -1)
 (roth-live-global-hl-line-mode 1)
-
+(setq roth-live-hl-mode-excludes nil)
 
 ;; tabs
 (defvar roth-live-untabify-modes '(java-mode))
@@ -39,11 +39,6 @@
 
 ;; automodes
 (add-to-list 'auto-mode-alist '("MERGE_MSG$" . diff-mode))
-
-
-;;; GLOBAL SETTINGS
-
-(setq roth-live-hl-mode-excludes '(term-mode))
 
 ;; LISP
 ;(add-hook 'lisp-mode-hook 'roth-live-paredit-on)

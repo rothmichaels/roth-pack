@@ -10,4 +10,6 @@
 
 (add-hook 'term-mode-hook 'roth-term-mode-hook)
 
+(add-to-list 'roth-live-hl-mode-excludes '(term-mode))
+
 (define-key term-raw-map (kbd "s-v") 'term-paste)
