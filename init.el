@@ -1,6 +1,5 @@
 ;;; global adjustments
 
-;(live-load-config-file "fixes.el")
 (live-load-config-file "global-modes.el")
 (live-load-config-file "terminal.el")
 
