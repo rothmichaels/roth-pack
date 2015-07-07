@@ -42,18 +42,12 @@
 
 ;; LISP
 ;(add-hook 'lisp-mode-hook 'roth-live-paredit-on)
-(add-hook 'lisp-mode-hook 'roth-live-linum)
 
 ;; Emacs Lisp
 ;(add-hook 'emacs-lisp-mode-hook 'roth-live-paredit-on)
-(add-hook 'emacs-lisp-mode-hook 'roth-live-linum)
 
-;; Clojure
-(add-hook 'clojure-mode-hook 'roth-live-linum)
 
-;; PHP
-;(require 'php-mode)
-;(add-hook 'php-mode-hook 'roth-live-linum-on)
+
 
 ;; Markdown
 (add-hook 'markdown-mode-hook 'roth-live-auto-fill)
@@ -62,7 +56,6 @@
 (add-hook 'markdown-mode-hook 'fill-100)
 
 ;; java
-(add-hook 'java-mode-hook 'roth-live-linum)
 (defun tab-width-4 ()
   (setq tab-width 4))
 (add-hook 'java-mode-hook 'tab-width-4)
@@ -87,4 +80,3 @@
 ;;(add-to-list 'auto-mode-alist '("\\.\\(php\\|inc\\)$" . php-mode))
 ;;(add-to-list 'auto-mode-alist '("\\.info" . conf-windows-mode))
 ;;(add-hook 'drupal-mode-hook 'mh-linum-mode-on)
- 
