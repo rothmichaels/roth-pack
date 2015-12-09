@@ -71,12 +71,3 @@
 
 (add-hook 'diff-mode-hook '(lambda ()
                              (local-set-key [M-backspace] 'backward-kill-word)))
-
-
-
-;; Drupal
-;;(require 'drupal-mode)
-;;(add-to-list 'auto-mode-alist '("\\.\\(module\\|test\\|install\\|theme\\)$" . drupal-mode))
-;;(add-to-list 'auto-mode-alist '("\\.\\(php\\|inc\\)$" . php-mode))
-;;(add-to-list 'auto-mode-alist '("\\.info" . conf-windows-mode))
-;;(add-hook 'drupal-mode-hook 'mh-linum-mode-on)
