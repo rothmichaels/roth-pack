@@ -21,7 +21,7 @@
   (when (memq major-mode roth-live-untabify-modes)
     (tabify (point-min) (point-max))))
 
-(setq before-save-hook nil)
+;(setq before-save-hook nil)
 (add-hook 'before-save-hook 'roth-live-untabify-hook)
 
 ;; minor modes settings
