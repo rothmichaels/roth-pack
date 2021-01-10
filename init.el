@@ -2,7 +2,12 @@
 
 (live-load-config-file "fixes.el")
 (live-load-config-file "global-modes.el")
+(live-load-config-file "magit.el")
 (live-load-config-file "terminal.el")
+(live-load-config-file "keybindings.el")
+
+(live-add-pack-lib "fireplace")
+(require 'fireplace)
 
 (setq roth-live-hl-mode-excludes '(term-mode))
 

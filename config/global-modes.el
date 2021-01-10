@@ -39,6 +39,8 @@
 
 ;; automodes
 (add-to-list 'auto-mode-alist '("MERGE_MSG$" . diff-mode))
+(add-to-list 'auto-mode-alist '("\\.gypi?" . python-mode))
+(add-to-list 'auto-mode-alist '("\\.h" . c++-mode))
 
 ;; LISP
 ;(add-hook 'lisp-mode-hook 'roth-live-paredit-on)
@@ -46,7 +48,37 @@
 ;; Emacs Lisp
 ;(add-hook 'emacs-lisp-mode-hook 'roth-live-paredit-on)
 
+;; C++
+(defun roth-c++-indent ()
+  (interactive)
+  (setq tab-width 4 c-basic-offset 4 indent-tabs-mode t))
 
+(add-hook 'c++-mode-hook 'roth-c++-indent)
+
+;; xml
+(defun izo-xml-indent ()
+  (interactive)
+  (setq indent-tabs-mode t)
+  (setq nxml-child-indent 4 nxml-attribute-indent 4)
+  (setq tab-width 4))
+
+(defun izo-xml-hook ()
+  (interactive)
+  (izo-xml-indent)
+  (auto-fill-mode 0))
+
+(add-hook 'nxml-mode-hook 'izo-xml-hook)
+
+;; Shell Script
+(defun roth-shell-indent ()
+  (interactive)
+  (setq tab-width 4
+        sh-basic-offset 4
+        indent-tabs-mode t
+        sh-indent-for-case-label 2
+        sh-indent-for-case-alt '+))
+
+(add-hook 'shell-mode-hook 'roth-shell-indent)
 
 
 ;; Markdown
